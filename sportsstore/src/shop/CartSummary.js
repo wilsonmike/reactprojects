@@ -22,11 +22,11 @@ export class CartSummary extends Component {
 
   render() {
     return (
-      <div className="float-end">
+      <div className="flex-end p-2">
         <small>
           {this.getSummary()}
           <Link className={this.getLinkClasses()} to="/shop/cart">
-            <i className="fa fa-shopping-cart"></i>
+            <i className="fa fa-shopping-cart" style={{ color: "white" }}></i>
           </Link>
         </small>
       </div>

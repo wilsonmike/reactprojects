@@ -8,8 +8,8 @@ export class Shop extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 bg-dark text-white">
-            <div className="navbar-brand">SportDrop</div>
+          <div className="col-12 d-flex justify-content-between bg-dark text-white">
+            <div className="navbar-brand p-2">SportDrop</div>
             <CartSummary {...this.props} />
           </div>
         </div>
