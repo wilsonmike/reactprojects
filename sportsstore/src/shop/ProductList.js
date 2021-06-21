@@ -9,7 +9,14 @@ export class ProductList extends Component {
       <div className="card m-1 p-1 bg-light" key={p.id}>
         <h4>
           {p.name}
-          <span className="badge badge-pill badge-primary float-right">
+          <span
+            className="badge badge-secondary float-end"
+            style={{
+              color: "white",
+              background: "#0D6EFD",
+              borderRadius: "20px",
+            }}
+          >
             ${p.price.toFixed(2)}
           </span>
         </h4>
