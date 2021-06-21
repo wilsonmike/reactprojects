@@ -14,13 +14,13 @@ export class Shop extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-3 p-2">
+          <div className="col-3 d-flex flex-column align-items-center p-2">
             <CategoryNavigation
               baseUrl="/shop/products"
               categories={this.props.categories}
             />
           </div>
-          <div className="col-9 p-2">
+          <div className="col-8 p-2">
             <ProductList
               products={this.props.products}
               addToCart={this.props.addToCart}
