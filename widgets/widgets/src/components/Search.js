@@ -5,10 +5,6 @@ const Search = () => {
   const [term, setTerm] = useState('programming');
   const [results, setResults] = useState([]);
 
-  console.log(results);
-
-  console.log('run every render');
-
   useEffect(() => {
     const search = async () => {
       const {data} = await axios.get('https://en.wikipedia.org/w/api.php', {
@@ -20,7 +16,7 @@ const Search = () => {
           srsearch: term
         }
       });
-      setResults(data);
+      setResults(data.query.search);
     }
       search();
   }, [term])
