@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
 
 const Search = () => {
@@ -6,8 +7,12 @@ const Search = () => {
   console.log('run every render');
 
   useEffect(() => {
-    console.log('useeffect');
-  }, [])
+    const search = async () => {
+      await axios.get('');
+    }
+
+    search();
+  }, [term])
 
   return (
     <div>
